@@ -1,4 +1,4 @@
-﻿# CMakeList.txt: проект CMake для lab1c; включите исходный код и определения,
+﻿# CMakeList.txt: проект CMake для lab1; включите исходный код и определения,
 # укажите здесь логику для конкретного проекта.
 #
 cmake_minimum_required (VERSION 3.8)
@@ -9,13 +9,18 @@ if (POLICY CMP0141)
   set(CMAKE_MSVC_DEBUG_INFORMATION_FORMAT "$<IF:$<AND:$<C_COMPILER_ID:MSVC>,$<CXX_COMPILER_ID:MSVC>>,$<$<CONFIG:Debug,RelWithDebInfo>:EditAndContinue>,$<$<CONFIG:Debug,RelWithDebInfo>:ProgramDatabase>>")
 endif()
 
-project ("lab1c")
+# Копируем файл 1.txt в директорию сборки
+configure_file(${CMAKE_SOURCE_DIR}/1.txt ${CMAKE_BINARY_DIR}/1.txt COPYONLY)
+
+# Указываем рабочую директорию
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR})
+
+project ("lab1")
 
 # Добавьте источник в исполняемый файл этого проекта.
-add_executable (lab1c "lab1c.cpp" "lab1c.h" "tests.cpp")
+add_executable (lab1 "lab1.cpp" "lab1.h" "test.cpp")
+
 
 if (CMAKE_VERSION VERSION_GREATER 3.12)
-  set_property(TARGET lab1c PROPERTY CXX_STANDARD 20)
+  set_property(TARGET lab1 PROPERTY CXX_STANDARD 20)
 endif()
-
-# TODO: Добавьте тесты и целевые объекты, если это необходимо.
