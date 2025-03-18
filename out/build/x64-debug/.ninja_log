@@ -1,0 +1,14 @@
+# ninja log v5
+27	1313	7640095184095362	CMakeFiles/lab1.dir/lab2.cpp.obj	705d3510d993f474
+31	1312	7640095184095362	CMakeFiles/lab1.dir/main.cpp.obj	2c923bb307d9ec45
+1313	1619	7640095186638926	C:/Users/MSI/source/repos/lab_cpp_4sem/lab1.exe	3f1fd128488c6d72
+3	571	7640097113006504	build.ninja	90c749cdb3118b14
+113	1347	7640109349897504	CMakeFiles/lab1.dir/lab2.cpp.obj	705d3510d993f474
+123	1361	7640109350050310	CMakeFiles/lab1.dir/main.cpp.obj	2c923bb307d9ec45
+1361	1720	7640109353139158	C:/Users/MSI/source/repos/lab_cpp_4sem/lab1.exe	3f1fd128488c6d72
+3	895	7640109773892735	CMakeFiles/lab1.dir/main.cpp.obj	2c923bb307d9ec45
+896	1133	7640109775856946	C:/Users/MSI/source/repos/lab_cpp_4sem/lab1.exe	3f1fd128488c6d72
+1	647	7640109895901015	CMakeFiles/lab1.dir/lab2.cpp.obj	705d3510d993f474
+648	806	7640109897005416	C:/Users/MSI/source/repos/lab_cpp_4sem/lab1.exe	3f1fd128488c6d72
+41	1339	7640116572107318	CMakeFiles/lab1.dir/main.cpp.obj	2c923bb307d9ec45
+1340	1625	7640116574527754	C:/Users/MSI/source/repos/lab_cpp_4sem/lab1.exe	3f1fd128488c6d72
