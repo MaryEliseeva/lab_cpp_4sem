@@ -33,8 +33,6 @@ int main()
 
     teacher.check(group_pmi3);
     ofstream outputFile("output.txt");
-    streambuf* coutBuffer = cout.rdbuf(); // Сохраняем текущий буфер cout
-    cout.rdbuf(outputFile.rdbuf()); // Перенаправляем вывод в outputFile
     teacher.show_result(group_pmi3);
 
 	return 0;
