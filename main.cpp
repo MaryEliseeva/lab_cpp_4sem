@@ -16,7 +16,6 @@ int main()
     Good_Student Gleb("Gleb", 0.8);
     Good_Student Max("Maxim", 0.5);
     Good_Student Kate("Kate", 0.3);
-    Bad_Student Alex("Alex");
 
 
     std::vector<std::shared_ptr<Student>> group_pmi3;
@@ -26,7 +25,6 @@ int main()
     group_pmi3.push_back(std::make_shared<Good_Student>(Max));
     group_pmi3.push_back(std::make_shared<Good_Student>(Kate));
     group_pmi3.push_back(std::make_shared<Bad_Student>(Leonid)); 
-    group_pmi3.push_back(std::make_shared<Bad_Student>(Alex));
 
 
     teacher.solve(equation);
@@ -35,7 +33,6 @@ int main()
 
     teacher.check(group_pmi3);
     ofstream outputFile("output.txt");
-
     teacher.show_result(group_pmi3);
 
 	return 0;
